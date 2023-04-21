@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-size: 16px; */
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background: linear-gradient(149deg, rgba(165,215,232,1) 0%, rgba(87,108,188,1) 27%, rgba(12,50,103,1) 68%, rgba(11,36,71,1) 100%);
+    height: 100vh;
+    overflow: hidden;
+    font-weight: 700;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50vh;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 255, 0.218);
+}
+.container h1{
+    text-align: center;
+    padding: 0px 0px 10px 0px ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.188);
+    margin-bottom: 25px;
+    margin: 24px 25px 25px 25px;
+    color: rgb(0, 0, 255);
+    border-radius: 2px;
+
+}
+.container form{
+    box-sizing: border-box;
+    padding:20px 15px 0px 15px;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.188);
+    border-radius: 1px;
+    margin-bottom: 30px;
+}
+form .txt_field input{
+    width: 100%;
+    padding: 0px 5px;
+    height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left:5px;
+    color: rgba(0, 0, 0, 0.421);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: all .3s;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 0%;
+    height: 2.5px;
+    background: rgb(101, 101, 255);
+    transition: all .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: 0px;
+    color:rgb(101, 101, 255) ;
+
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+#text_1{
+    margin: 0px 5px 20px 5px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#text_1:hover{
+    text-decoration: underline;
+    
+}
+input[type="submit"]{
+    width: 100%;
+    height: 5vh;
+    background:rgb(101, 101, 255) ;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    color: white;
+    transition: all .3s;
+    margin-bottom:12px ;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background:rgb(219, 219, 255) ;
+    color: rgb(0, 8, 255);
+    box-shadow: 1px 1px 5px rgba(0, 0, 255, 0.371);
+}
+.text_2{
+    text-align: center;
+    color:rgb(0, 0, 0) ;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.text_2 a{
+    text-decoration: none;
+    color: blue;
+
+}
+.text_2 :hover{
+    text-decoration:underline;
+
+}
